@@ -1,0 +1,104 @@
+\documentclass[16pt]{report}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage [utf8x] {inputenc}
+\usepackage [T2A] {fontenc} 
+\usepackage{setspace}
+\onehalfspacing 
+\begin{document}
+	
+\title{Домашнее~задание~по математическому~анализу}
+\author{Берсенев Егор\\
+	Факультет молекулярной и химической физики МФТИ(ГУ)\\
+	группа 543}
+\date {Сентябрь 2015}
+\maketitle
+
+\section{C1, §13}
+
+%\begin{center}
+%	\emph{C1, §13}
+%\end{center}
+
+\subsection{27.} 
+\begin{center}
+
+	$ y = (x^2-7x+8)e^x$
+
+	$ y' = (2x-7)e^x + (x^2-7x+8)e^x = e^x(x^2-5x+1) $
+
+	$ D(x) =  x \in\mathbb{R}$ 
+\end{center}
+
+\subsection{38.}
+\begin{center}
+	$y = \frac{\ln x}{\coth x} $
+	
+	$ y' = \cfrac{\cfrac{\coth x}{x} + \cfrac{\ln x}{\sinh^2 x}}{\coth^2 x}$
+	
+	$D(x): x \in (0;\infty) $
+\end{center}
+
+\subsection{51.}
+\begin{center}
+	$ y = x\sinh2x$ 
+	
+	$ y' = \sinh2x +  2x\cosh 2x $
+	
+	$x_0 = 1$
+	
+	$ y'(1) = \cfrac{e^2-\cfrac{1}{e^2}}{2} + e^2 + \frac{1}{e^2} = \frac{3}{2}\cdot e^2 + \frac{1}{2e^2} $
+\end{center}
+
+\subsection{61.}
+\begin{center}
+	$ y = (9 + 7 \cdot 2x^\frac{1}{5})^\frac{1}{13} $
+	
+	$ y' = \frac{14}{65}(9+ 7 \cdot 2x^\frac{1}{5})^{-\frac{12}{13}}\cdot 2x^{-\frac{4}{5}} $
+\end{center}
+
+\subsection{79.}
+\begin{center}
+	$ y = \sin(\ln|x|) $
+	
+	$ y' = \frac{\cos\ln|x|}{x}$
+\end{center}
+
+\subsection{147.}
+\begin{center}
+	$y = x^{e^x} = e^{\ln x^{e^x}} = e^{e^x \cdot \ln x} $
+	
+	$y' = e^{e^x \cdot \ln x}\cdot (e^x \cdot \frac{1}{x}) = e^x \cdot x^{e^x}(\ln x+\frac{1}{x}) $
+\end{center}
+
+\subsection{151.}
+\begin{center}
+	$ y = (\arcsin \sin^2 x)^{\arctan x} $
+	
+	$y' = \Big{(}\frac{\ln(\arcsin(\sin^2x))}{1+x^2}+\frac{\arctan x \cdot \sin2x}{\arcsin(\sin^2x)\cdot +\sqrt{1-sin^4x}}\Big{)}\cdot (\arcsin \sin^2 x)^{\arctan x}$
+\end{center}
+
+\subsection{1.(задавальник)}
+\begin{center}
+	$y = \Bigg{(} \frac{\sinh 2x + \cosh 2x - e^{2x^2}}{\tan x + \sin x}\Bigg)^{\frac{1}{\arctan^2x}} $
+	
+	
+	Пусть $A = \frac{\sinh 2x +\cosh 2x -e^{2x^2}}{\tan x + \sin x}$, $B = \frac{1}{\arctan^2x}$, тогда $y = e^{\ln A^B} = e^{B\cdot \ln A}$
+	
+	$B' = \frac{-2}{(1+x^2)\cdot \arctan^3 x}$
+	
+	$ (\ln A)'= \frac{A'}{A}$
+	
+	$A' = \frac{(2\cosh x + 2\sinh x -4xe^{2x^2})\cdot (\tan x + \sin x)-(\sinh 2x + \cosh 2x- e^{2x^2}\cdot(\frac{1}{\cos^2x}+\cos x) )}{(\tan x + \sin x)^2} $
+	
+	
+	$y' = y = \Bigg{(} \frac{\sinh 2x + \cosh 2x - e^{2x^2}}{\tan x + \sin x}\Bigg{)}^{\frac{1}{\arctan^2x}} \cdot \Bigg{(} \frac{-2}{\arctan^3 x \cdot (1+x^2)}\cdot \ln(\frac{\sinh 2x+\cosh 2x - e^{2x^2}}{\tan x + \sin x}) + \frac{ (2\cosh x + 2\sinh x - 4e^{x^2})      \cdot        (\tan x +\sin x)    -    (\sinh 2x + \cosh 2x  -e^{2x^2}}{\arctan^2 x \cdot (\sinh 2x + \cosh 2x - e^{2x^2}) \cdot (\tan x + \sin x)} \Bigg{)} $
+
+\end{center}
+
+\section*{C2, §2}
+
+
+\end{document}
